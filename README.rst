@@ -29,13 +29,13 @@ The natural way to monitor the existence of the log file would be to check for i
 How do i build it?
 ==================
 
-With `Gradle`_. We are using version 1.7. To build, simply do::
+With `Maven`. We are using version 3.5. To build, simply do::
 
-    gradle clean build
+    mvn clean package
 
-This builds a jar file in ``build/libs``. To use this in other projects, you might like to install it in your local Maven repository::
+This builds a jar file in ``target``. To use this in other projects, you might like to install it in your local Maven repository::
 
-    gradle install
+    mvn install
 
 How do i use it?
 ================
@@ -116,5 +116,4 @@ nocreate
 .. _logrotate: https://fedorahosted.org/logrotate/
 .. _RollingFileAppender: http://logback.qos.ch/manual/appenders.html#RollingFileAppender
 .. _appropriate sharing mode: http://msdn.microsoft.com/en-us/library/aa363858%28v=vs.85%29.aspx
-.. _Gradle: http://www.gradle.org/
 .. _Logback configuration file: http://logback.qos.ch/manual/configuration.html
